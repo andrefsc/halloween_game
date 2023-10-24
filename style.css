@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white; /* Define a cor do texto para branco ou outra cor legível no fundo preto */
+}
+
+.quiz-container, .question-container, .result-popup {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: white;
+    color: black; /* Define a cor do texto para uma cor legível no fundo amarelo */
+    font-family: Arial, sans-serif; /* Define o tipo de letra como Arial */
+    font-size: 1em; /* Dobra o tamanho da fonte */
+    padding: 10px 20px; /* Aumenta o preenchimento (padding) para o dobro */
+}
+
+.question-image {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+.answer-container {
+    text-align: center; /* Centraliza a caixa de resposta e o botão horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Define a margem entre a imagem e a caixa de resposta/botão */
+}
+
+/* Adicione espaço vertical entre a caixa de introdução de texto e o botão */
+#answer-input {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário para controlar o espaçamento vertical */
+    width: 300px; /* Define a largura desejada, por exemplo, o dobro do tamanho padrão */
+    height: 40px; /* Define a altura desejada, por exemplo, o dobro do tamanho padrão */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+#next-question-container {
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: center; /* Alinha o botão à direita */
+    margin-top: 20px; /* Espaço entre "Resposta Correta" e o botão "Próxima Pergunta" */
+    text-align: center; /* Centralizar horizontalmente o botão (opcional) */
+}
+
+.next-question {
+    margin-top: 10px; /* Adicione margem para criar espaço entre o texto e o botão */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent; /* Define o fundo como transparente para que fique branco */
+    color: white; /* Define o texto como branco */
+    font-family: 'CreepyFont', cursive; /* Substitua 'CreepyFont' pelo nome da fonte 'creepy' desejada */
+    /* Outros estilos desejados para o botão */
+    border: 2px solid white; /* Adicione uma borda branca para destacar o botão */
+    padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+    border-radius: 10px; /* Adicione cantos arredondados */
+}
+
+#next-question:hover {
+    background-color: white; /* Altera a cor de fundo ao passar o mouse */
+    color: black; /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Estilo para centralizar o botão "Próxima Pergunta" vertical e horizontalmente */
+.result-popup {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#start-button {
+    border-radius: 10px; /* Define cantos arredondados (ajuste conforme necessário) */
+    background-color: orange; /* Define o fundo laranja */
+    color: white; /* Define o texto como branco */
+    padding: 10px 20px; /* Define o preenchimento (ajuste conforme necessário) */
+    font-size: 16px; /* Define o tamanho da fonte (ajuste conforme necessário) */
+}
+
+#start-button:hover {
+    background-color: darkorange; /* Altera a cor de fundo ao passar o mouse (ajuste conforme necessário) */
+}
+
+#submit-answer {
+    border-radius: 10px; /* Define cantos arredondados (ajuste conforme necessário) */
+    background-color: orange; /* Define o fundo laranja */
+    color: white; /* Define o texto como branco */
+    padding: 10px 20px; /* Define o preenchimento (ajuste conforme necessário) */
+    font-size: 16px; /* Define o tamanho da fonte (ajuste conforme necessário) */
+}
+
+#submit-answer:hover {
+    background-color: darkorange; /* Altera a cor de fundo ao passar o mouse (ajuste conforme necessário) */
+}
