@@ -67,7 +67,6 @@ submitButton.addEventListener("click", () => {
             nextButton.style.display = "block"; // Exibe o botão "Próxima Pergunta"
         } else {
             // Última pergunta - redireciona para a página de parabéns
-            parabensAudio.play()
             window.location.href = "parabens.html";
             parabensAudio.play();
         }
