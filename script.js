@@ -44,7 +44,7 @@ const questions = [
 ];
 
 const correctAnswers = ["", "", "", "", "", "", ""];
-//const correctAnswers = ["Lagoa Azul", "Piso Dois", "2243", "20", "", "31out", "lugar trinta e um"];
+//const correctAnswers = ["Lagoa Azul", "Piso Dois", "2243", "20", "36", "31out", "lugar trinta e um"];
 
 
 let currentQuestion = 0;
