@@ -43,7 +43,9 @@ const questions = [
     },
 ];
 
-const correctAnswers = ["Lagoa Azul", "Piso Dois", "2243", "20", "", "31out", "lugar trinta e um"];
+const correctAnswers = ["", "", "", "", "", "", ""];
+//const correctAnswers = ["Lagoa Azul", "Piso Dois", "2243", "20", "", "31out", "lugar trinta e um"];
+
 
 let currentQuestion = 0;
 
@@ -60,6 +62,7 @@ startButton.addEventListener("click", () => {
 
 submitButton.addEventListener("click", () => {
     const userAnswer = answerInput.value;
+
     if (userAnswer.toLowerCase() === correctAnswers[currentQuestion].toLowerCase()) {
         correctAnswerAudio.play();
         resultMessage.textContent = "💀💀💀💀💀💀💀💀💀💀 PARABÉNS!! RESPOSTA CORRECTA !! 💀💀💀💀💀💀💀💀💀";
@@ -67,6 +70,7 @@ submitButton.addEventListener("click", () => {
             nextButton.style.display = "block"; // Exibe o botão "Próxima Pergunta"
         } else {
             // Última pergunta - redireciona para a página de parabéns
+            //parabensAudio.play();
             window.location.href = "parabens.html";
             parabensAudio.play();
         }
@@ -82,6 +86,8 @@ submitButton.addEventListener("click", () => {
    scrollTarget.scrollIntoView({ behavior: "smooth" });
 
 });
+
+
 
 answerInput.addEventListener("input", () => {
     resultPopup.style.display = "none"; // Oculta o popup ao digitar na caixa de resposta
